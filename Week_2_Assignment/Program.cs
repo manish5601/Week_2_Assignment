@@ -2,19 +2,17 @@
 {
     static void Main()
     {
-        int[] favoriteNumbers = { 7, 3, 9, 1, 5 };
+        DateTime birthDate = new DateTime(1995, 7, 15);
+        DateTime currentDate = DateTime.Now;
 
-        Array.Sort(favoriteNumbers);
-        Array.Reverse(favoriteNumbers);
+        TimeSpan ageSpan = currentDate - birthDate;
+        int ageInYears = (int)(ageSpan.Days / 365.25);
 
-        Console.WriteLine("Array elements:");
-        for (int i = 0; i < favoriteNumbers.Length; i++)
-        {
-            Console.WriteLine(favoriteNumbers[i]);
-        }
+        Console.WriteLine($"Birthdate: {birthDate:yyyy-MM-dd}");
+        Console.WriteLine($"Current date: {currentDate:yyyy-MM-dd HH:mm:ss}");
+        Console.WriteLine($"Age: {ageInYears} years");
 
-        int numberToFind = 3;
-        int index = Array.IndexOf(favoriteNumbers, numberToFind);
-        Console.WriteLine($"\nPosition of {numberToFind}: {index} (0-based index)");
+        DateTime tenDaysLater = birthDate.AddDays(10);
+        Console.WriteLine($"10 days after birthdate: {tenDaysLater:yyyy-MM-dd}");
     }
 }
