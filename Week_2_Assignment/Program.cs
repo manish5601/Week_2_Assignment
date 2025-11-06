@@ -2,17 +2,31 @@
 {
     static void Main()
     {
-        DateTime birthDate = new DateTime(1995, 7, 15);
-        DateTime currentDate = DateTime.Now;
+        List<string> fruits = new List<string> { "Apple", "Banana", "Mango" };
 
-        TimeSpan ageSpan = currentDate - birthDate;
-        int ageInYears = (int)(ageSpan.Days / 365.25);
+        fruits.Add("Orange");
 
-        Console.WriteLine($"Birthdate: {birthDate:yyyy-MM-dd}");
-        Console.WriteLine($"Current date: {currentDate:yyyy-MM-dd HH:mm:ss}");
-        Console.WriteLine($"Age: {ageInYears} years");
+        fruits.Remove("Banana");
 
-        DateTime tenDaysLater = birthDate.AddDays(10);
-        Console.WriteLine($"10 days after birthdate: {tenDaysLater:yyyy-MM-dd}");
+        Console.WriteLine("Fruits in List:");
+        foreach (string fruit in fruits)
+        {
+            Console.WriteLine(fruit);
+        }
+
+        Dictionary<int, string> fruitDict = new Dictionary<int, string>
+        {
+            { 1, "Apple" },
+            { 2, "Mango" },
+            { 3, "Orange" }
+        };
+
+        fruitDict.Add(4, "Grape");
+
+        Console.WriteLine("\nFruit Dictionary:");
+        foreach (var pair in fruitDict)
+        {
+            Console.WriteLine($"ID: {pair.Key}, Name: {pair.Value}");
+        }
     }
 }
