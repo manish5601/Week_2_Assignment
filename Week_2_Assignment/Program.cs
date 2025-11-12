@@ -26,25 +26,25 @@ public class Circle
     }
 }
 
-//public class Program
-//{
-//    public static void Main()
-//    {
-//        // This line will cause a compilation error:
-//        // Circle.PI = 3.14159;
+public class Program
+{
+    public static void Main()
+    {
+        // This line will cause a compilation error:
+        // Circle.PI = 3.14159;
 
-//        // Error explanation:
-//        // The field 'Circle.PI' is a constant and cannot be assigned to.
-//        // Constants are immutable and their value cannot be changed after declaration.
+        // Error explanation:
+        // The field 'Circle.PI' is a constant and cannot be assigned to.
+        // Constants are immutable and their value cannot be changed after declaration.
 
-//        Circle circle = new Circle();
-//        double area = circle.CalculateArea(5);
-//        double perimeter = circle.CalculatePerimeter(5);
+        Circle circle = new Circle();
+        double area = circle.CalculateArea(5);
+        double perimeter = circle.CalculatePerimeter(5);
 
-//        System.Console.WriteLine($"Area: {area}");
-//        System.Console.WriteLine($"Perimeter: {perimeter}");
-//    }
-//}
+        System.Console.WriteLine($"Area: {area}");
+        System.Console.WriteLine($"Perimeter: {perimeter}");
+    }
+}
 
 //Task- 3
 //public class Program
