@@ -1,13 +1,13 @@
-﻿//Task-1
-//public class Program
-//{
-//    public static void Main()
-//    {
-//        string userName = "Alex";
-//        int luckyNumber = 7;
-//        System.Console.WriteLine($"Hello, {userName}! Your lucky number is {luckyNumber}.");
-//    }
-//}
+﻿//Task - 1
+public class Program
+{
+    public static void Main()
+    {
+        string userName = "Alex";
+        int luckyNumber = 7;
+        System.Console.WriteLine($"Hello, {userName}! Your lucky number is {luckyNumber}.");
+    }
+}
 
 //Task-2
 
@@ -120,38 +120,38 @@
 
 //Task-6
 
-class Program
-{
-    static void Main()
-    {
+//class Program
+//{
+//    static void Main()
+//    {
 
 
-        List<string> fruits = new List<string> { "Apple", "Banana", "Mango" };
+//        List<string> fruits = new List<string> { "Apple", "Banana", "Mango" };
 
-        fruits.Add("Orange");
+//        fruits.Add("Orange");
 
-        fruits.Remove("Banana");
+//        fruits.Remove("Banana");
 
-        Console.WriteLine("Fruits in List:");
-        foreach (string fruit in fruits)
-        {
-            Console.WriteLine(fruit);
-        }
+//        Console.WriteLine("Fruits in List:");
+//        foreach (string fruit in fruits)
+//        {
+//            Console.WriteLine(fruit);
+//        }
 
-        Dictionary<int, string> fruitDict = new Dictionary<int, string>
-        {
-            { 1, "Apple" },
-            { 2, "Mango" },
-            { 3, "Orange" }
-        };
+//        Dictionary<int, string> fruitDict = new Dictionary<int, string>
+//        {
+//            { 1, "Apple" },
+//            { 2, "Mango" },
+//            { 3, "Orange" }
+//        };
 
-        fruitDict.Add(4, "Grape");
+//        fruitDict.Add(4, "Grape");
 
-        Console.WriteLine("\nFruit Dictionary:");
-        foreach (var pair in fruitDict)
-        {
-            Console.WriteLine($"ID: {pair.Key}, Name: {pair.Value}");
-        }
+//        Console.WriteLine("\nFruit Dictionary:");
+//        foreach (var pair in fruitDict)
+//        {
+//            Console.WriteLine($"ID: {pair.Key}, Name: {pair.Value}");
+//        }
 
-    }
-}
+//    }
+//}
