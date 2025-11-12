@@ -79,22 +79,42 @@
 //}
 
 //Task-4
+//public class Program
+//{
+//    public static void Main()
+//    {
+//        int[] favoriteNumbers = new int[] { 7, 3, 9, 1, 5 };
+
+//        System.Array.Sort(favoriteNumbers);
+//        System.Array.Reverse(favoriteNumbers);
+
+//        for (int i = 0; i < favoriteNumbers.Length; i++)
+//        {
+//            System.Console.WriteLine(favoriteNumbers[i]);
+//        }
+
+//        int position = System.Array.IndexOf(favoriteNumbers, 3);
+//        System.Console.WriteLine($"Position of 3: {position}");
+//    }
+//}
+
+//Task-5
 public class Program
 {
     public static void Main()
     {
-        int[] favoriteNumbers = new int[] { 7, 3, 9, 1, 5 };
+        System.DateTime birthDate = new System.DateTime(1995, 7, 15);
+        System.DateTime currentDate = System.DateTime.Now;
 
-        System.Array.Sort(favoriteNumbers);
-        System.Array.Reverse(favoriteNumbers);
+        System.TimeSpan ageSpan = currentDate - birthDate;
+        int ageInYears = (int)(ageSpan.Days / 365.25);
 
-        for (int i = 0; i < favoriteNumbers.Length; i++)
-        {
-            System.Console.WriteLine(favoriteNumbers[i]);
-        }
+        System.Console.WriteLine($"Birthdate: {birthDate:yyyy-MM-dd}");
+        System.Console.WriteLine($"Current date: {currentDate:yyyy-MM-dd HH:mm:ss}");
+        System.Console.WriteLine($"Age in years: {ageInYears}");
 
-        int position = System.Array.IndexOf(favoriteNumbers, 3);
-        System.Console.WriteLine($"Position of 3: {position}");
+        System.DateTime tenDaysLater = birthDate.AddDays(10);
+        System.Console.WriteLine($"10 days after birthdate: {tenDaysLater:yyyy-MM-dd}");
     }
 }
 
