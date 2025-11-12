@@ -97,8 +97,7 @@
 //        System.Console.WriteLine($"Position of 3: {position}");
 //    }
 //}
-
-Task - 5
+//Task - 5
 public class Program
 {
     public static void Main()
@@ -117,6 +116,7 @@ public class Program
         System.Console.WriteLine($"10 days after birthdate: {tenDaysLater:yyyy-MM-dd}");
     }
 }
+
 
 //Task-6
 
