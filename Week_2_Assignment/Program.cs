@@ -79,44 +79,44 @@
 //}
 
 //Task-4
-public class Program
-{
-    public static void Main()
-    {
-        int[] favoriteNumbers = new int[] { 7, 3, 9, 1, 5 };
-
-        System.Array.Sort(favoriteNumbers);
-        System.Array.Reverse(favoriteNumbers);
-
-        for (int i = 0; i < favoriteNumbers.Length; i++)
-        {
-            System.Console.WriteLine(favoriteNumbers[i]);
-        }
-
-        int position = System.Array.IndexOf(favoriteNumbers, 3);
-        System.Console.WriteLine($"Position of 3: {position}");
-    }
-}
-
-//Task-5
 //public class Program
 //{
 //    public static void Main()
 //    {
-//        System.DateTime birthDate = new System.DateTime(1995, 7, 15);
-//        System.DateTime currentDate = System.DateTime.Now;
+//        int[] favoriteNumbers = new int[] { 7, 3, 9, 1, 5 };
 
-//        System.TimeSpan ageSpan = currentDate - birthDate;
-//        int ageInYears = (int)(ageSpan.Days / 365.25);
+//        System.Array.Sort(favoriteNumbers);
+//        System.Array.Reverse(favoriteNumbers);
 
-//        System.Console.WriteLine($"Birthdate: {birthDate:yyyy-MM-dd}");
-//        System.Console.WriteLine($"Current date: {currentDate:yyyy-MM-dd HH:mm:ss}");
-//        System.Console.WriteLine($"Age in years: {ageInYears}");
+//        for (int i = 0; i < favoriteNumbers.Length; i++)
+//        {
+//            System.Console.WriteLine(favoriteNumbers[i]);
+//        }
 
-//        System.DateTime tenDaysLater = birthDate.AddDays(10);
-//        System.Console.WriteLine($"10 days after birthdate: {tenDaysLater:yyyy-MM-dd}");
+//        int position = System.Array.IndexOf(favoriteNumbers, 3);
+//        System.Console.WriteLine($"Position of 3: {position}");
 //    }
 //}
+
+Task - 5
+public class Program
+{
+    public static void Main()
+    {
+        System.DateTime birthDate = new System.DateTime(1995, 7, 15);
+        System.DateTime currentDate = System.DateTime.Now;
+
+        System.TimeSpan ageSpan = currentDate - birthDate;
+        int ageInYears = (int)(ageSpan.Days / 365.25);
+
+        System.Console.WriteLine($"Birthdate: {birthDate:yyyy-MM-dd}");
+        System.Console.WriteLine($"Current date: {currentDate:yyyy-MM-dd HH:mm:ss}");
+        System.Console.WriteLine($"Age in years: {ageInYears}");
+
+        System.DateTime tenDaysLater = birthDate.AddDays(10);
+        System.Console.WriteLine($"10 days after birthdate: {tenDaysLater:yyyy-MM-dd}");
+    }
+}
 
 //Task-6
 
