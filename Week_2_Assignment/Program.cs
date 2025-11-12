@@ -98,60 +98,60 @@
 //    }
 //}
 //Task - 5
-public class Program
-{
-    public static void Main()
-    {
-        System.DateTime birthDate = new System.DateTime(1995, 7, 15);
-        System.DateTime currentDate = System.DateTime.Now;
+//public class Program
+//{
+//    public static void Main()
+//    {
+//        System.DateTime birthDate = new System.DateTime(1995, 7, 15);
+//        System.DateTime currentDate = System.DateTime.Now;
 
-        System.TimeSpan ageSpan = currentDate - birthDate;
-        int ageInYears = (int)(ageSpan.Days / 365.25);
+//        System.TimeSpan ageSpan = currentDate - birthDate;
+//        int ageInYears = (int)(ageSpan.Days / 365.25);
 
-        System.Console.WriteLine($"Birthdate: {birthDate:yyyy-MM-dd}");
-        System.Console.WriteLine($"Current date: {currentDate:yyyy-MM-dd HH:mm:ss}");
-        System.Console.WriteLine($"Age in years: {ageInYears}");
+//        System.Console.WriteLine($"Birthdate: {birthDate:yyyy-MM-dd}");
+//        System.Console.WriteLine($"Current date: {currentDate:yyyy-MM-dd HH:mm:ss}");
+//        System.Console.WriteLine($"Age in years: {ageInYears}");
 
-        System.DateTime tenDaysLater = birthDate.AddDays(10);
-        System.Console.WriteLine($"10 days after birthdate: {tenDaysLater:yyyy-MM-dd}");
-    }
-}
+//        System.DateTime tenDaysLater = birthDate.AddDays(10);
+//        System.Console.WriteLine($"10 days after birthdate: {tenDaysLater:yyyy-MM-dd}");
+//    }
+//}
 
 
 //Task-6
 
-//class Program
-//{
-//    static void Main()
-//    {
+class Program
+{
+    static void Main()
+    {
 
 
-//        List<string> fruits = new List<string> { "Apple", "Banana", "Mango" };
+        List<string> fruits = new List<string> { "Apple", "Banana", "Mango" };
 
-//        fruits.Add("Orange");
+        fruits.Add("Orange");
 
-//        fruits.Remove("Banana");
+        fruits.Remove("Banana");
 
-//        Console.WriteLine("Fruits in List:");
-//        foreach (string fruit in fruits)
-//        {
-//            Console.WriteLine(fruit);
-//        }
+        Console.WriteLine("Fruits in List:");
+        foreach (string fruit in fruits)
+        {
+            Console.WriteLine(fruit);
+        }
 
-//        Dictionary<int, string> fruitDict = new Dictionary<int, string>
-//        {
-//            { 1, "Apple" },
-//            { 2, "Mango" },
-//            { 3, "Orange" }
-//        };
+        Dictionary<int, string> fruitDict = new Dictionary<int, string>
+        {
+            { 1, "Apple" },
+            { 2, "Mango" },
+            { 3, "Orange" }
+        };
 
-//        fruitDict.Add(4, "Grape");
+        fruitDict.Add(4, "Grape");
 
-//        Console.WriteLine("\nFruit Dictionary:");
-//        foreach (var pair in fruitDict)
-//        {
-//            Console.WriteLine($"ID: {pair.Key}, Name: {pair.Value}");
-//        }
+        Console.WriteLine("\nFruit Dictionary:");
+        foreach (var pair in fruitDict)
+        {
+            Console.WriteLine($"ID: {pair.Key}, Name: {pair.Value}");
+        }
 
-//    }
-//}
+    }
+}
