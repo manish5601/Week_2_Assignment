@@ -1,30 +1,30 @@
 ﻿//Task - 1
-public class Program
-{
-    public static void Main()
-    {
-        string userName = "Alex";
-        int luckyNumber = 7;
-        System.Console.WriteLine($"Hello, {userName}! Your lucky number is {luckyNumber}.");
-    }
-}
-
-//Task-2
-
-//public class Circle
+//public class Program
 //{
-//    public const double PI = 3.14;
-
-//    public double CalculateArea(double radius)
+//    public static void Main()
 //    {
-//        return PI * radius * radius;
-//    }
-
-//    public double CalculatePerimeter(double radius)
-//    {
-//        return 2 * PI * radius;
+//        string userName = "Alex";
+//        int luckyNumber = 7;
+//        System.Console.WriteLine($"Hello, {userName}! Your lucky number is {luckyNumber}.");
 //    }
 //}
+
+//Task - 2
+
+public class Circle
+{
+    public const double PI = 3.14;
+
+    public double CalculateArea(double radius)
+    {
+        return PI * radius * radius;
+    }
+
+    public double CalculatePerimeter(double radius)
+    {
+        return 2 * PI * radius;
+    }
+}
 
 //public class Program
 //{
